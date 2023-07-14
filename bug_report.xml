@@ -1,1 +1,21 @@
-
+<id>T1</id>
+<Summary>При нажатии несколько раз на кнопку pause-play при просмотре видеофайла в телеграмм зависает окно просмотра, при этом звук продолжает идти при очередном нажатии на play</Summary>
+<Project>Telegram Desktop</Project>
+<Version>4.8.3 x64<Version>
+<Severity>Blocker</Severity>
+<Priority>Normal</Priority>
+<Status>New</Status>
+<Environment>Windows11, версия 22H2 (ОС 22621.1848)</Environment>
+<Description>
+    <Precondition>Зайти в Телеграм</Precondition>
+    <Steps_to_reproduce>     <1>Открыть видео файл для просмотра на канале 35_QA_Group</1>
+                             <2>Нажать pause</2>
+                             <3>Свернуть окно</3>
+                             <4>Развернуть окно</4>
+                             <5>Нажать Play</5>
+                             <6>Повторить пункты с 2 по 5 еще 3-4 раза</6>
+    </Steps_to_reproduce>  
+</Description>
+<Actual_result>Зависло окно видеофайла, при этом звук продолжает работать при нажатии на Play. Нет возможности перемотать видео. После закрытия видеофайла и повторном открытии ошибка не исчезает</Actual_result>
+<Expected_result>Окно просмотра видеофайла должно продолжить показ видео при нажатии на Play.</Expected_result>
+<Attachment>...</Attachment>
